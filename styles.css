@@ -54,6 +54,7 @@ body {
 }
 
 #rangeInfoDiv {
+    
 }
 .range {
     position: relative;
@@ -110,9 +111,6 @@ body {
 
 /* 768px */
 @media only screen and (max-width: 992px) {
-    body {
-        /* background-color: lightgoldenrodyellow; */
-    }
     #main {
         position: relative;
         display: inline-block;
@@ -156,9 +154,6 @@ body {
 
 /* 480px */
 @media only screen and (max-width: 768px) {
-    body {
-        /* background-color: lightsalmon; */
-    }
     #main {
         position: relative;
         display: inline-block;
@@ -239,9 +234,7 @@ body {
 
 /* 576px */
 @media only screen and (max-width: 576px){
-    body {
-        /* background-color: lightblue; */
-    }                                                                                                                                                                                                                            
+                                                                                                                                                                                                                          
     #main {
         position: relative;
         display: inline-block;
