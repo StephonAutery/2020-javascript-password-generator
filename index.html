@@ -1,75 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <!-- reset all css settings before we get started -->
-        <link  rel="stylesheet" href="css/reset.css">
-        <!-- local, custom css -->
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <!-- link to site favicon -->
-        <link rel="icon" type="image/png" href="images/Favicon.png">
-    <title>stephon autery - password generator</title>
-  </head>
-  
-  <body>
 
-    <header id="header">
-      <h1>Password Generator</h1>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- reset all css settings before we get started -->
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- local, custom css -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <!-- link to site favicon -->
+  <link rel="icon" type="image/png" href="images/Favicon.png">
+  <title>stephon autery - password generator</title>
+</head>
 
-  <main id="main" class="container">
+<body>
 
-    <h2 id="header2">Generate a Password</h2>
+  <header id="header">
+    <h1>Password Generator</h1>
+  </header>
+
+  <main id="main">
+    <h2>Generate a Password</h2>
     <hr>
-      <textarea
-        readonly
-        id="password"
-        resize="none"
-        placeholder="Your Secure Password"
-        aria-label="Generated Password"
-      ></textarea>
+    <textarea readonly id="password" resize="none" placeholder="Your Secure Password"
+      aria-label="Generated Password"></textarea>
     <hr>
-
-    <div>
-      <p id="passText">please select your password criteria</p>
-    </div>
-
-    <div id="charDiv">
-      <input name="radio" class="radio" type="checkbox" id="special"> special charachters<br>
-      <input name="radio" class="radio" type="checkbox" id="nums"> numbers<br>
-      <input name="radio" class="radio" type="checkbox" id="lower"> lower case letters<br>
-      <input name="radio" class="radio" type="checkbox" id="upper"> upper case letters<br>
-    </div>
-
-    <div>
-      <p id="passText">please select your password length</p>
-    </div>
-
-    <div id="rangeDiv">
-      <span class="range">8</span><input id="range" type="range" min="8" max="128" value="68"><span id="rangeSpan" class="range">128</span>
-    </div>
-
-    <div>
-      <p id="rangeInfoDiv"></p>
-    </div>
-
-    <div id="buttonDiv">
-      <p class="button">
-        <button id="generate" type="submit">Generate Password</button>
-      </p>
-      <p class="button">
-        <button id="copy">Copy to Clipboard</button>
-      </p>
-      
-    </div>
-
-
+    <p id="passText">please select your password criteria</p>
+    <input name="radio" class="radio" type="checkbox" id="special"> special charachters<br>
+    <input name="radio" class="radio" type="checkbox" id="nums"> numbers<br>
+    <input name="radio" class="radio" type="checkbox" id="lower"> lower case letters<br>
+    <input name="radio" class="radio" type="checkbox" id="upper"> upper case letters<br>
+    <p id="passText">please select your password length</p>
+    <span class="range">8</span><input id="range" type="range" min="8" max="128" value="68"><span id="rangeSpan"
+      class="range">128</span>
+    <p id="rangeInfoDiv"></p>
+    <p class="button">
+      <button id="generate" type="submit">Generate Password</button>
+    </p>
+    <p class="button">
+      <button id="copy">Copy to Clipboard</button>
+    </p>
   </main>
 
   <script src="javaScript.js"></script>
 
-  </body>
+</body>
 
 </html>

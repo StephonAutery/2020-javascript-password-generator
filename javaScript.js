@@ -96,7 +96,7 @@ function getPassword(){
         }
     varCount++;
     }   
-    // writes the password to the screen
+    // write the password to the screen
     password.textContent = varPassWord;
 }
 
