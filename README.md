@@ -1,7 +1,6 @@
-# a javascript password generator
+# A javascript password generator
 
-
-For this assignment, css, and javascript are used to manipulate the DOM and genrate a random string.
+css, and javascript are used to manipulate the DOM and genrate a random string.
 
 ## Site Picture
 ![Site](/images/2020-ucb-03-password-generator-snip.PNG)
@@ -14,7 +13,7 @@ For this assignment, css, and javascript are used to manipulate the DOM and genr
 - [GitHub](https://github.com/) - hosts repository that can be deployed to GitHub Pages
 
 ## Summary 
-This application generates a random password based on the user's specifications.
+this application generates a random password based on the user's specifications.
 
 ## Code Snippet
 where the work gets done.
