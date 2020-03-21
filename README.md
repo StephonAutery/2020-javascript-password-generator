@@ -18,11 +18,43 @@ For this assignment, css, and javascript are used to manipulate the DOM and genr
 This application generates a random password based on the user's specifications.
 
 ## Code Snippet
-coming soon!
+where the work gets done.
 
 ```javaScript
 
-console.log("foo.");
+// build the password
+function getPassword(){
+    varIterate = rangeFind.value;
+    varLower = charDiv.lower.checked;
+    varUpper = charDiv.upper.checked;
+    varSpecial = charDiv.special.checked;
+    varNum = charDiv.nums.checked;
+    while (varCount < varIterate){
+        if (varSpecial === true && i < varIterate){
+            varTmpChar = getSpecial();
+            varPassWord = varPassWord.concat(varTmpChar);
+            i++     
+        }
+        if(varNum === true && i < varIterate){
+            varTmpChar = getNum();
+            varPassWord = varPassWord.concat(varTmpChar);
+            i++
+        }
+        if(varLower === true && i < varIterate){
+            varTmpChar = getLower();
+            varPassWord = varPassWord.concat(varTmpChar);
+            i++                   
+        }
+        if(varUpper === true && i < varIterate) {
+            varTmpChar = getUpper();
+            varPassWord = varPassWord.concat(varTmpChar);
+            i++                  
+        }
+    varCount++;
+    }   
+    // write the password to the screen
+    password.value = varPassWord;
+}
 
 ```
 

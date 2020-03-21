@@ -8,7 +8,7 @@
   <!-- reset all css settings before we get started -->
   <!-- <link rel="stylesheet" href="css/reset.css"> -->
   <!-- local, custom css -->
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
   <!-- link to site favicon -->
   <link rel="icon" type="image/png" href="images/Favicon.png">
   <title>stephon autery - password generator</title>
@@ -16,25 +16,23 @@
 
 <body>
 
-  <header id="header">
+  <header>
     <h1>Password Generator</h1>
   </header>
+
   <main id="main">
     <h2>Generate a Password</h2>
     <hr>
-    <textarea readonly id="password" resize="none" placeholder="Your Secure Password"></textarea>
+    <textarea readonly id="password">your secure pasword</textarea>
     <hr>
     <p id="passText">please select your password criteria</p>
-    <section id="buttSection">
-      <input name="radio" class="radio" type="checkbox" id="special"> special charachters<br>
-      <input name="radio" class="radio" type="checkbox" id="nums"> numbers<br>
-      <input name="radio" class="radio" type="checkbox" id="lower"> lower case letters<br>
-      <input name="radio" class="radio" type="checkbox" id="upper"> upper case letters<br>
-    </section>
+    <input name="radio" class="radio" type="checkbox" id="special"> special charachters<br>
+    <input name="radio" class="radio" type="checkbox" id="nums"> numbers<br>
+    <input name="radio" class="radio" type="checkbox" id="lower"> lower case letters<br>
+    <input name="radio" class="radio" type="checkbox" id="upper"> upper case letters<br>
     <p id="passText">please select your password length</p>
-    <span class="range">8</span><input id="range" type="range" min="8" max="128" value="68"><span id="rangeSpan"
-      class="range">128</span>
-    <p id="rangeInfo"></p>
+    <p id="rangeInfoDiv"><span class="range">8</span><input id="range" type="range" min="8" max="128" value="68"><span id="rangeSpan"
+      class="range">128</span></p>
     <p class="button">
       <button id="generate" type="submit">Generate Password</button>
     </p>

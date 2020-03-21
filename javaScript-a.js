@@ -3,7 +3,7 @@ charDiv = document.getElementsByClassName("radio");
 rangeFind = document.getElementById("range");
 generatePwdBtn = document.getElementById("generate");
 copyToClipBtn = document.getElementById("copy");
-rangeInfo = document.getElementById("rangeInfo");
+rangeInfo = document.getElementById("rangeInfoDiv");
 
 // reset all parameters
 function reset(){
@@ -26,7 +26,7 @@ function copyToClip(){
     document.execCommand("copy");
 };
 
-// get upper case letters
+// get upper case letter
 function getUpper() {
     do {
         varRandomNum = Math.round(Math.random() * 100);
@@ -36,7 +36,7 @@ function getUpper() {
     return varChar;            
 }      
 
-// get lower case letters
+// get lower case letter
 function getLower(){
     do {
         varRandomNum = Math.round(Math.random() * 100);
@@ -46,7 +46,7 @@ function getLower(){
     return varChar;  
 }
 
-// get numbers
+// get number
 function getNum(){
     do {
         varRandomNum = Math.round(Math.random() * 100);
@@ -56,7 +56,7 @@ function getNum(){
     return varChar;  
 }
 
-// get special characters
+// get special character
 function getSpecial(){
     do {
         varRandomNum = Math.round(Math.random() * 100);
@@ -97,7 +97,7 @@ function getPassword(){
     varCount++;
     }   
     // write the password to the screen
-    password.textContent = varPassWord;
+    password.value = varPassWord;
 }
 
 // validate criteria selection before building password
@@ -110,10 +110,6 @@ function generatePwd(){
         getPassword();
     } else {password.textContent = "please select at least one password criteria";}
     reset();
-}
-
-function showSelect(){
-    console.log(test + " ..|");
 }
 
 function showRangeSelect(e){
@@ -130,12 +126,6 @@ var varPLength = 0;
 var varCount = 0;
 var i = 0;
 var test = "";
-
-//still trying to figure out why this won't pass the true value of the array from inside the 'for' loop.
-for (i=0; i < charDiv.length; i++){
-    test=charDiv[i].id;
-    charDiv[i].addEventListener("change", showSelect, false);
-};
 
 generatePwdBtn.addEventListener("mousedown", function(e){
     generatePwd(e);

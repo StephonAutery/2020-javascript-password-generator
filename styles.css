@@ -19,26 +19,18 @@ body {
 
 #password {
     text-align: center;
-    width: 450px;
-    height: 125px;
+    width: 80%;
+    height: 65px;
     border: 1px dashed lightgrey;
     border-radius: 10px;
 }
 
-#rangeDiv {
-    position: relative;
+#buttSection {
+    width: 225px;
+    text-align: left;
     display: inline-block;
-    
-    width: 400px;
 }
 
-#range {
-    width: 150px;
-}
-
-#rangeInfoDiv {
-    
-}
 .range {
     position: relative;
     display: inline-block;
@@ -48,31 +40,16 @@ body {
 }
 
 #passText {
-    margin-top: 25px;
+    margin-top: 20px;
     color: darkgreen;
-}
-
-#charDiv {
-    text-align: left;
-    display: inline-block;
-    width: 225px;
 }
 
 .radio {
     margin-bottom: 10px;
 }
 
-#buttonDiv {
-    position: relative;
-    text-align: center;
-    display: inline-block;
-    margin-top: 25px;
-    width: 400px;
-}
-
 .button {
     display: inline-block;
-    padding: 10px;
 }
 
 #generate {
@@ -95,7 +72,7 @@ body {
     border-radius: 15px;
 }
 
-/* 768px */
+/* 992px */
 @media only screen and (max-width: 992px) {
     #main {
         position: relative;
@@ -106,33 +83,7 @@ body {
         border-radius: 10px;
         border: 1px solid lightgray;
         background-color: white;
-    }
-    
-    #password {
-        text-align: center;
-        width: 300px;
-        height: 125px;
-        border: 1px dashed lightgrey;
-        border-radius: 10px;
-    }
-
-    #textDiv {
-        resize: none;
-        width: 350px;
-        margin: 15px;
-        padding: 5px;
-        border-top: 1px solid lightgrey;
-        border-bottom: 1px solid lightgrey;
-    }
-
-    #buttonDiv {
-        position: relative;
-        text-align: center;
-        display: inline-block;
-        margin-top: 25px;
-        width: 325px;
-    }
-    
+    }  
 }
 
 /* 768px media inquiery */
@@ -147,93 +98,13 @@ body {
         border: 1px solid lightgray;
         background-color: white;
     }
-    
-    /* #header2 {
-        text-align: left;
-        margin-left: 20px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        width: 250px;
-    } */
-
-    #password {
-        text-align: center;
-        width: 250px;
-        height: 125px;
-        border: 1px dashed lightgrey;
-        border-radius: 10px;
-    }
-
-    #textDiv {
-        resize: none;
-        width: 300px;
-        margin: 15px;
-        padding: 5px;
-        border-top: 1px solid lightgrey;
-        border-bottom: 1px solid lightgrey;
-    }
-
-    #buttonDiv {
-        position: relative;
-        text-align: center;
-        display: inline-block;
-        margin-top: 25px;
-        width: 200px;
-    }
-
-    .button {
-        /* position: relative; */
-        /* display: inline-block; */
-        /* text-align: center; */
-        /* float: left;
-        clear: left; */
-    }
-    .range {
-        /* position: relative; */
-        /* overflow: auto; */
-        /* display: inline-block; */
-        color: darkgreen;
-        width: 75px;
-        /* display: none; */
-        /* padding-left: 10px;
-        padding-right: 10px; */
-    }
-
-    #rangeDiv {
-        position: relative;
-        display: inline-block;
-        width: 350px;
-    }
-
-    #rangeSelectorDiv{
-
-
-    }
 }
 
 /* 576px */
-@media only screen and (max-width: 576px){
-                                                                                                                                                                                                                          
+@media only screen and (max-width: 576px){                                                                                                                                                                                                                     
     #main {
-        width: 350px;
+        width: 325px;
         padding: 20px;
         background-color: white;
     }
-    
-    #password {
-        text-align: center;
-        width: 300px;
-        height: 125px;
-        border: 1px dashed lightgrey;
-        border-radius: 10px;
-    }
-
-    #textDiv {
-        resize: none;
-        margin: 15px;
-        padding: 5px;
-        border-top: 1px solid lightgrey;
-        border-bottom: 1px solid lightgrey;
-    }
 }
-
