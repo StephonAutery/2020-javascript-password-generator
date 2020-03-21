@@ -1,6 +1,5 @@
-# 03-javascript-password generator
+# a javascript password generator
 
-## UCBerkeley Bootcamp Assignment No.3 
 
 For this assignment, css, and javascript are used to manipulate the DOM and genrate a random string.
 
