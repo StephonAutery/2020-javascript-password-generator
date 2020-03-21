@@ -5,7 +5,7 @@
 For this assignment, css, and javascript are used to manipulate the DOM and genrate a random string.
 
 ## Site Picture
-![Site](./images/2020-ucb-03-password-generator-snip.jpg)
+![Site](images/2020-ucb-03-password-generator-snip.jpg)
 
 ## Technologies Used
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
