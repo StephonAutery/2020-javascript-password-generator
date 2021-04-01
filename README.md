@@ -58,7 +58,7 @@ function getPassword(){
 
 ## Deployed Link
 
-* [see live site](https://stephonautery.github.io/2020-ucb-03-javascript-password-generator/)
+* [see live site](https://stephonautery.github.io/2020-javascript-password-generator/)
 * [github repository](https://github.com/StephonAutery/2020-ucb-03-javascript-password-generator)
 
 ## Authors
